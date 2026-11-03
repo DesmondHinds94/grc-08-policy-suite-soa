@@ -1,0 +1,54 @@
+Policy,Clause,Requirement,NIST_800-53r5,ISO_27001_2022
+POL-01,1.1,"This policy sets the rules for granting, using, reviewing and removing access to CivicStack systems and customer data, s…",AC-1(a)(1),A.5.15
+POL-01,2.1,"The CISO owns this policy, reviews it annually and after any significant incident or audit finding, and approves excepti…","AC-1(b), AC-1(c)",A.5.2
+POL-01,2.2,"System owners define the roles for their system, the privileges in each role, and who may approve each role.","AC-2(a), AC-2(c)",A.5.15
+POL-01,2.3,"The IAM Engineer provisions, modifies and removes accounts only on an approved request, and performs the monthly reconci…",AC-2(b),A.5.18
+POL-01,3.1,"Least privilege. Access is granted at the minimum level needed for the user's assigned duties, for customer data scoped …","AC-6, AC-6(5)",A.8.3
+POL-01,3.2,"Separation of duties. No one person may both request and approve their own access, or both make and approve a production…",AC-5,A.5.3
+POL-01,3.3,Unique identity. Every user has an individual account. Shared and group accounts are prohibited except the vaulted break…,"AC-2(a), IA-2, IA-4",A.5.16
+POL-01,4.1,"Account types are limited to: workforce, customer user, service (non-person) and break-glass. Each service account has a…","AC-2(a), IA-4",A.5.16
+POL-01,4.2,Accounts are created only after documented approval by the requester's supervisor of record (CMHA) or engineering manage…,"AC-2(e), AC-2(d)",A.5.18
+POL-01,4.3,Customer users are provisioned from role templates scoped by office. Statewide access (`case:read:all`) requires CMHA IS…,"AC-6(5), AC-2(d)",A.8.3
+POL-01,4.4,Role changes are handled as a new request. Access no longer needed in the new role is removed within 5 business days.,"AC-2(f), PS-5",A.5.18
+POL-01,4.5,Accounts inactive for 35 days (privileged) or 90 days (standard) are disabled automatically. Customer-user accounts with…,AC-2(3),A.5.18
+POL-01,4.6,"On separation, access is disabled within 24 hours, or 8 hours for privileged users. Separations are fed automatically fr…","PS-4(a), AC-2(h)","A.6.5, A.5.18"
+POL-01,4.7,"Each month the IAM Engineer reconciles active accounts against the HR systems of record, with a named backup performer, …","AC-2(j), PS-4",A.5.18
+POL-01,4.8,Privileged entitlements are recertified quarterly by a reviewer who neither holds nor reports to the holder of the entit…,"AC-6(7), AC-2(j)","A.5.18, A.8.2"
+POL-01,5.1,Privileged access requires phishing-resistant MFA (FIDO2). Workforce access to any system holding customer data requires…,"IA-2(1), IA-2(2)",A.8.5
+POL-01,5.2,"Passwords are at least 12 characters, screened against breached-password lists when set and at next sign-in, stored only…",IA-5(1),A.5.17
+POL-01,5.3,After 5 consecutive failed sign-ins the account is locked for 30 minutes. Sessions lock after 15 minutes of inactivity a…,"AC-7, AC-11, AC-12",A.8.5
+POL-01,6.1,"Administrative access to production is granted just-in-time through the privileged access management (PAM) tool, for no …","AC-2(1), AC-6(1), AC-6(9)",A.8.2
+POL-01,6.2,"The break-glass credential is vaulted. Checking it out alerts the Security Lead, who reviews the session and records sig…","AC-2(2), AU-6","A.8.2, A.8.15"
+POL-01,7.1,Remote administrative access is only through the managed session service. No inbound SSH or RDP is exposed. Operator dev…,"AC-17, AC-17(1), AC-17(3)","A.6.7, A.8.1"
+POL-01,8.1,"Exceptions must be requested in writing, risk-assessed, approved by the CISO, and expire within 12 months. They are trac…","AC-1(a)(1), PM-9",A.5.36
+POL-01,8.2,Violations may lead to removal of access and disciplinary action under the HR policy.,PS-8,A.6.4
+POL-02,0.1,"Acknowledgment. Everyone signs this policy (the Rules of Behavior) before getting access, and again each year.","PL-4(c), PL-4(d)",A.6.2
+POL-02,1.1,"Customer data, including applicant PII in HAP, may be accessed only to perform an assigned task. Looking up records out …","PL-4(a), AC-6",A.5.10
+POL-02,1.2,"Customer data may not be copied to personal devices, personal email, personal cloud storage or AI tools that are not on …","PL-4(a), AC-20, SC-7(10)","A.5.10, A.8.12"
+POL-02,1.3,"Full SSNs may not be displayed, exported or pasted into tickets, chat or documents. Use the last four digits or the toke…","PL-4(a), PT-2","A.5.34, A.8.11"
+POL-02,2.1,"Only CivicStack-managed devices may reach production or customer data. Managed devices must keep disk encryption, EDR, a…","AC-19, AC-20",A.8.1
+POL-02,2.2,"Do not disable, bypass or uninstall security tools.","PL-4(a), SI-3",A.8.7
+POL-02,2.3,Removable media may not be used with customer data.,MP-7,A.7.10
+POL-02,2.4,Lock your screen when you step away. No customer data is left visible or printed in shared spaces.,AC-11,A.7.7
+POL-02,3.1,"Never share passwords, MFA devices or sessions. Use the company password manager.","IA-5, PL-4(a)",A.5.17
+POL-02,3.2,Never use a CivicStack password for any other service.,IA-5,A.5.17
+POL-02,4.1,"On public networks, connect only through the company-managed secure access client. Do not work on customer data where ot…","AC-17, PL-4(a)",A.6.7
+POL-02,5.1,"Do not discuss customers, incidents or security weaknesses on social media or in public forums.",PL-4(1),A.6.6
+POL-02,6.1,"Report suspected incidents, phishing, lost devices or policy violations straight away to `#security` or `security@`. Rep…","IR-6, PL-4(a)",A.6.8
+POL-02,7.1,"CivicStack systems are monitored. Users have no expectation of privacy on company systems, except where law provides oth…","AC-8, AU-2",A.8.16
+POL-02,8.1,Violations may result in removal of access and disciplinary action up to termination.,PS-8,A.6.4
+POL-03,1.1,"CivicStack detects, responds to and recovers from security incidents in a way that limits harm to customers and the peop…",IR-1(a)(1),A.5.24
+POL-03,1.2,"An incident is any event that actually or potentially compromises the confidentiality, integrity or availability of a sy…",IR-8(a)(4),A.5.25
+POL-03,2.1,"The CISO owns this policy and the IR capability. The IR Plan names, for each role, a primary and a backup: Incident Comm…","IR-8(a)(5), IR-1(b)","A.5.24, A.5.2"
+POL-03,2.2,Every workforce member reports suspected incidents immediately (POL-02 §6.1).,IR-6(a),A.6.8
+POL-03,3.1,Incidents are triaged within 15 minutes of a P1 alert and given a severity (Sev-1 to Sev-4) using the matrix in the IR P…,"IR-4(a), IR-8(a)(4)",A.5.25
+POL-03,3.2,"Incident handling covers preparation, detection and analysis, containment, eradication and recovery. Each phase is logge…","IR-4(a), IR-5",A.5.26
+POL-03,3.3,"Evidence is collected and preserved with a chain of custody whenever legal action, law enforcement or regulatory reporti…","IR-4, AU-9",A.5.28
+POL-03,4.1,"Government customers are notified within 24 hours of an incident being declared (for HAP: the CMHA ISSO), and updated at…","IR-6(b), IR-6(3)","A.5.26, A.5.5"
+POL-03,4.2,"Notifications to regulators and affected individuals (state breach-notification law, HUD, and US-CERT/CISA where a contr…",IR-6(b),"A.5.5, A.5.31"
+POL-03,4.3,Suppliers whose services are involved are notified and their cooperation requested under contract (see the vendor addend…,"IR-6(3), SR-8",A.5.19
+POL-03,5.1,"The IR Plan is tested at least annually with a tabletop exercise that includes the customer liaison role, and after any …","IR-3, IR-3(2)",A.5.24
+POL-03,5.2,Everyone with an IR role is trained within 30 days of taking the role and every year after that.,IR-2,A.6.3
+POL-03,5.3,Each Sev-1 or Sev-2 incident and each exercise produces an after-action report within 10 business days. Corrective actio…,"IR-4(c), IR-8(c)",A.5.27
+POL-03,6.1,"The IR Plan is reviewed annually and updated after exercises, incidents and organizational changes. Changes are sent to …","IR-8(b), IR-8(c), IR-8(d)",A.5.24
+POL-03,6.2,The IR Plan is protected from unauthorized disclosure and modification.,IR-8(e),A.5.24

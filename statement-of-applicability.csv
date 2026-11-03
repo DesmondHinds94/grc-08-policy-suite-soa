@@ -1,0 +1,94 @@
+Annex_A,Control,Applicable,Inclusion_Reason,Implementation_or_Exclusion_Justification,Status,NIST_800-53r5,Policy_or_Evidence
+A.5.1,Policies for information security,Yes,C,ISMS policy set approved by CEO; POL-01..03 reviewed annually,Implemented,"PL-1, AC-1, IR-1",POL-01 §2.1
+A.5.2,Information security roles and responsibilities,Yes,C,"CISO, system owners, IAM engineer, IR roles named",Implemented,"PM-2, PL-2",POL-01 §2; POL-03 §2.1
+A.5.3,Segregation of duties,Yes,"R-01, R-02",No self-approval of access or changes; recert reviewer independence,Partially implemented,AC-5,"POL-01 §3.2, §4.8; GRC-04 F-02"
+A.5.4,Management responsibilities,Yes,C,Managers enforce policy; acknowledgment tracked,Implemented,"PM-1, PL-4",POL-02 §0.1
+A.5.5,Contact with authorities,Yes,L,"Legal owns contacts for state AG, HUD, CISA",Implemented,IR-6,POL-03 §4.2
+A.5.6,Contact with special interest groups,Yes,B,MS-ISAC and StateRAMP/GovRAMP community membership,Implemented,PM-15,Membership records
+A.5.7,Threat intelligence,Yes,"R-03, R-05",MS-ISAC feed into SIEM; manual triage,Partially implemented,"PM-16, SI-5",GRC-07 coverage gap
+A.5.8,Information security in project management,Yes,B,Security review gate in product delivery template,Implemented,"SA-3, SA-8",SDLC standard
+A.5.9,Inventory of information and other associated assets,Yes,R-09,Cloud asset inventory; legacy node group gap,Partially implemented,CM-8,GRC-06 CM-8 check
+A.5.10,Acceptable use of information and other associated assets,Yes,C,Acceptable Use Policy / Rules of Behavior,Implemented,PL-4,POL-02
+A.5.11,Return of assets,Yes,R-02,Offboarding checklist recovers devices and keys,Implemented,PS-4,Offboarding checklist
+A.5.12,Classification of information,Yes,L,Public / Internal / Confidential / Restricted-PII,Implemented,RA-2,Data classification standard
+A.5.13,Labelling of information,Yes,L,Exports labeled Restricted-PII; doc headers,Partially implemented,MP-3,GRC-02 MP family
+A.5.14,Information transfer,Yes,R-06,TLS 1.2+; SFTP for state IV; no email of PII,Implemented,"SC-8, AC-4",POL-02 §1.2
+A.5.15,Access control,Yes,"R-01, R-02",Access Control Policy,Implemented,"AC-1, AC-3",POL-01
+A.5.16,Identity management,Yes,R-01,Unique IDs; no shared accounts; service-account owners,Implemented,"IA-2, IA-4, AC-2","POL-01 §3.3, §4.1"
+A.5.17,Authentication information,Yes,R-04,"12-char minimum, breached-password screening, password manager",Partially implemented,"IA-5, IA-5(1)",POL-01 §5.2; GRC-05 SAR-05
+A.5.18,Access rights,Yes,R-02,"Approval, lifecycle, quarterly recert",Partially implemented,"AC-2, AC-6(7), PS-4",POL-01 §4; GRC-04 F-01..F-03
+A.5.19,Information security in supplier relationships,Yes,R-07,Vendor risk program being stood up,Partially implemented,"SR-3, SR-6",GRC-11
+A.5.20,Addressing information security within supplier agreements,Yes,"R-07, C","Security addendum: 24h notice, right to audit",Planned,"SR-3, SA-4",GRC-11 acceptance memo
+A.5.21,Managing information security in the ICT supply chain,Yes,R-07,SBOM in CI planned,Planned,"SR-3, SR-11",POA&M-07
+A.5.22,"Monitoring, review and change management of supplier services",Yes,R-07,Annual SOC 2 / CAIQ review,Partially implemented,"SR-6, SA-9",GRC-11
+A.5.23,Information security for use of cloud services,Yes,C,AWS GovCloud FedRAMP High inheritance documented in CRM,Implemented,"SA-9, CA-3",GRC-01 SSP §7
+A.5.24,Information security incident management planning and preparation,Yes,R-12,IR Policy + IR Plan v3.0 with named roles,Implemented,"IR-1, IR-8",POL-03
+A.5.25,Assessment and decision on information security events,Yes,R-05,Severity matrix; 15-min P1 triage target,Partially implemented,"IR-4, AU-6",POL-03 §3.1; GRC-05 SAR-04
+A.5.26,Response to information security incidents,Yes,R-12,Playbooks; 24h customer notice,Implemented,"IR-4, IR-6",POL-03 §3-4
+A.5.27,Learning from information security incidents,Yes,R-12,AAR within 10 business days; actions to POA&M,Implemented,"IR-4(c), IR-8(c)",POL-03 §5.3; GRC-10
+A.5.28,Collection of evidence,Yes,L,Chain-of-custody procedure,Implemented,"IR-4, AU-9",POL-03 §3.3
+A.5.29,Information security during disruption,Yes,R-08,Security controls maintained in DR region,Partially implemented,"CP-2, CP-10",GRC-12
+A.5.30,ICT readiness for business continuity,Yes,"R-08, R-13","BIA, RTO/RPO, restore tested",Partially implemented,"CP-2, CP-4, CP-9",GRC-12
+A.5.31,"Legal, statutory, regulatory and contractual requirements",Yes,L,"Register: Privacy Act, HUD, Delmont breach law, GovRAMP",Implemented,"PL-2, PT-1",GRC-01 SSP §11
+A.5.32,Intellectual property rights,Yes,L,License tracking for software and OSS,Implemented,CM-10,Software inventory
+A.5.33,Protection of records,Yes,L,Retention schedule; WORM log archive,Implemented,"AU-11, SI-12",GRC-05 AU-11
+A.5.34,Privacy and protection of PII,Yes,"L, R-11","PII data map, notice, minimization in progress",Partially implemented,"PT-2, PT-3, PT-5",POA&M-14
+A.5.35,Independent review of information security,Yes,C,Internal audit + independent SCA assessment,Implemented,"CA-2, CA-7",GRC-04; GRC-05
+A.5.36,"Compliance with policies, rules and standards for information security",Yes,C,Exception register; ConMon reporting,Implemented,"CA-7, PM-9",POL-01 §8.1
+A.5.37,Documented operating procedures,Yes,B,Runbooks in version control,Implemented,SA-5,Runbook repo
+A.6.1,Screening,Yes,C,Background checks pre-hire; caseworker re-screening cadence open,Partially implemented,PS-3,POA&M-13
+A.6.2,Terms and conditions of employment,Yes,B,Security duties in offer letters and contractor agreements,Implemented,"PS-6, PS-7",POL-02 §0.1
+A.6.3,"Information security awareness, education and training",Yes,C,Annual awareness; role-based privacy training planned,Partially implemented,"AT-2, AT-3",POA&M-14
+A.6.4,Disciplinary process,Yes,B,HR disciplinary policy referenced by POL-01/02,Implemented,PS-8,POL-01 §8.2
+A.6.5,Responsibilities after termination or change of employment,Yes,R-02,24h/8h deprovisioning; SCIM for CMHA in progress,Partially implemented,"PS-4, PS-5",POL-01 §4.6; GRC-04 F-01
+A.6.6,Confidentiality or non-disclosure agreements,Yes,C,NDAs for workforce and contractors,Implemented,PS-6,HR records
+A.6.7,Remote working,Yes,R-01,"Managed devices, posture check, secure access client",Partially implemented,"AC-17, AC-17(3)",POL-02 §4; POA&M-13
+A.6.8,Information security event reporting,Yes,R-05,#security channel and security@ mailbox,Implemented,IR-6,POL-02 §6.1
+A.7.1,Physical security perimeters,Yes,C,Data center: inherited from AWS. Office: badge-controlled,Implemented,PE-3,AWS FedRAMP package
+A.7.2,Physical entry,Yes,C,Inherited (data center); office badge access,Implemented,"PE-2, PE-3",AWS FedRAMP package
+A.7.3,"Securing offices, rooms and facilities",Yes,B,No customer data stored on-premises,Implemented,PE-3,Office standard
+A.7.4,Physical security monitoring,Yes,C,Inherited (data center),Implemented,PE-6,AWS FedRAMP package
+A.7.5,Protecting against physical and environmental threats,Yes,C,Inherited (data center),Implemented,"PE-13, PE-15",AWS FedRAMP package
+A.7.6,Working in secure areas,Yes,C,Inherited (data center),Implemented,PE-2,AWS FedRAMP package
+A.7.7,Clear desk and clear screen,Yes,B,Screen lock; no printed PII,Implemented,AC-11,POL-02 §2.4
+A.7.8,Equipment siting and protection,Yes,C,Inherited (data center),Implemented,PE-18,AWS FedRAMP package
+A.7.9,Security of assets off-premises,Yes,R-06,Full-disk encryption and remote wipe on laptops,Implemented,"AC-19, MP-5",POL-02 §2.1
+A.7.10,Storage media,Yes,R-06,Removable media prohibited for customer data,Implemented,MP-7,POL-02 §2.3
+A.7.11,Supporting utilities,Yes,C,Inherited (data center),Implemented,"PE-9, PE-11",AWS FedRAMP package
+A.7.12,Cabling security,No,-,Excluded: CivicStack operates no data center or wiring closet; office is a managed co-working space with no customer data on-premises. Data center cabling is covered under 5.23 inheritance,Excluded,PE-4,Exclusion approved by CISO
+A.7.13,Equipment maintenance,Yes,C,Inherited (data center); laptop vendor warranty,Implemented,MA-2,AWS FedRAMP package
+A.7.14,Secure disposal or re-use of equipment,Yes,R-06,Laptops wiped with certificate; data center media inherited,Implemented,MP-6,Disposal certificates
+A.8.1,User endpoint devices,Yes,R-01,"MDM, EDR, disk encryption",Implemented,"AC-19, CM-6",POL-02 §2.1
+A.8.2,Privileged access rights,Yes,R-01,"JIT via PAM, FIDO2, break-glass vaulted",Implemented,"AC-6(1), AC-2(1), IA-2(1)",POL-01 §6; GRC-04 WP-04
+A.8.3,Information access restriction,Yes,R-02,Office-scoped caseworker role; statewide grants expire,Partially implemented,"AC-3, AC-6(5)",POL-01 §4.3; POA&M-02
+A.8.4,Access to source code,Yes,B,Repo access via SSO groups; branch protection,Implemented,CM-5,SCM settings
+A.8.5,Secure authentication,Yes,R-04,MFA everywhere for workforce; applicant MFA rolling out,Partially implemented,"IA-2, IA-2(1)",POL-01 §5; POA&M-04
+A.8.6,Capacity management,Yes,R-13,Autoscaling and capacity alerts,Implemented,"CP-2(2), SC-5",Monitoring dashboards
+A.8.7,Protection against malware,Yes,R-05,EDR on servers and laptops,Implemented,SI-3,POL-02 §2.2
+A.8.8,Management of technical vulnerabilities,Yes,R-03,Authenticated scanning 94%; CI gate in warn mode,Partially implemented,"RA-5, SI-2",GRC-05 SAR-02; GRC-06
+A.8.9,Configuration management,Yes,R-09,CIS L1 in IaC; drift detection planned,Partially implemented,"CM-2, CM-6",GRC-09
+A.8.10,Information deletion,Yes,L,Retention-driven deletion jobs for closed applications,Partially implemented,"SI-12, MP-6",POA&M-14
+A.8.11,Data masking,Yes,R-10,SSN tokenization (61% migrated); last-4 display,Partially implemented,"SC-28(1), PT-2",GRC-05 SAR-01
+A.8.12,Data leakage prevention,Yes,R-06,Default-deny egress; DLP on email,Implemented,"SC-7(5), SC-7(10)",GRC-05 SC-7(5)
+A.8.13,Information backup,Yes,R-08,Snapshots + PITR; restore tested,Implemented,"CP-9, CP-9(1)",GRC-05 CP-9(1)
+A.8.14,Redundancy of information processing facilities,Yes,R-13,Multi-AZ; passive second region (AO-accepted),Implemented,"CP-7, SC-36",GRC-03 R-13
+A.8.15,Logging,Yes,R-05,Central SIEM; 90d hot + 1y immutable,Implemented,"AU-2, AU-3, AU-11",GRC-05 AU-11
+A.8.16,Monitoring activities,Yes,R-05,Detections live; review cadence gap,Partially implemented,"AU-6, SI-4",GRC-05 SAR-04
+A.8.17,Clock synchronization,Yes,C,Managed NTP source,Implemented,AU-8,GRC-01 SSP §6
+A.8.18,Use of privileged utility programs,Yes,R-01,Admin tools only in JIT sessions,Implemented,"AC-6(1), CM-7",POL-01 §6.1
+A.8.19,Installation of software on operational systems,Yes,R-09,Immutable images; no in-place installs,Implemented,"CM-11, CM-7",AMI pipeline
+A.8.20,Networks security,Yes,R-06,"Security groups, private subnets, WAF",Implemented,SC-7,GRC-01 SSP §4
+A.8.21,Security of network services,Yes,R-06,Managed interfaces enumerated in progress,Partially implemented,"SC-7(4), CA-3",POA&M-06
+A.8.22,Segregation of networks,Yes,R-06,Tiered subnets; prod isolated from non-prod,Implemented,"SC-7, SC-32",GRC-01 SSP §4
+A.8.23,Web filtering,Yes,R-06,Egress allow-list on servers; DNS filtering on laptops,Implemented,"SC-7(5), SI-3",GRC-05 SC-7(5)
+A.8.24,Use of cryptography,Yes,R-10,"TLS 1.2+, KMS, FIPS mode evidence in progress",Partially implemented,"SC-8, SC-13, SC-28",POA&M-11
+A.8.25,Secure development life cycle,Yes,R-03,SDLC documented; SAST/DAST not gating,Partially implemented,"SA-3, SA-15",GRC-02 SA family
+A.8.26,Application security requirements,Yes,R-03,Security requirements in user stories,Partially implemented,"SA-4, SA-8",GRC-02 SA family
+A.8.27,Secure system architecture and engineering principles,Yes,B,Architecture doc stale (PL-8),Partially implemented,"SA-8, PL-8",GRC-02 PL family
+A.8.28,Secure coding,Yes,R-03,Linting + SAST in CI (non-blocking),Partially implemented,"SA-11, SA-15",GRC-07 coverage gap
+A.8.29,Security testing in development and acceptance,Yes,R-03,DAST in staging; pen test planned,Partially implemented,"SA-11, CA-8",GRC-02 CA family
+A.8.30,Outsourced development,No,-,Excluded: all HAP development is performed by CivicStack employees; no development is outsourced. Re-evaluate if a contractor development team is engaged,Excluded,"SA-4, SA-11",Exclusion approved by CISO
+A.8.31,"Separation of development, test and production environments",Yes,B,Separate AWS accounts per environment,Implemented,"CM-4(1), SA-3(1)",Account structure
+A.8.32,Change management,Yes,R-09,PR review + CAB for prod; emergency change informal,Partially implemented,CM-3,GRC-02 CM family
+A.8.33,Test information,Yes,R-10,Synthetic data only outside prod,Implemented,SA-3(2),Data handling standard
+A.8.34,Protection of information systems during audit testing,Yes,B,"Assessor access read-only, time-boxed, removed after",Implemented,"CA-2, AC-2",GRC-05 SAP §4
